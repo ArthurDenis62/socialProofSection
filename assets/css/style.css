@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-darkMagenta: hsl(300, 43%, 22%);
+    --color-softPink: hsl(333, 80%, 67%);
+    --color-darkGrayishMagenta: hsl(303, 10%, 53%);
+    --color-lightGrahishMagenta: hsl(300, 24%, 96%);
+    --color-white: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: 'League Spartan';
+    background-image: url(/assets/images/bg-pattern-top-desktop.svg);
+    background-repeat: no-repeat;
+}
+
+main {
+    height: 100vh;
+    margin: 5em 2em 1em 2em;
+}
+
+p {
+    font-size: 18px;
+}
+
+.container {
+    max-width: 450px;
+}
+
+.block-first .subblock h1 {
+    font-size: 3em;
+    font-weight: 900;
+    letter-spacing: -0.04em;
+    line-height: 0.8em;
+    text-align: center;
+    margin-bottom: 0.6em;
+    color: var(--color-darkMagenta);
+}
+
+.block-first .subblock p {
+    line-height: 1.4em;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 2.4em;
+    color: var(--color-softPink);
+}
+
+.block-second .encard {
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 0.8em;
+    margin-bottom: 1em;
+    background-color: var(--color-lightGrahishMagenta);
+}
+
+.block-second .encard .stars {
+    letter-spacing: 0.2em;
+}
+
+.block-second .encard p {
+    font-weight: 900;
+    color: var(--color-darkMagenta);
+}
+
+.block-third .card {
+    padding: 3em;
+    border-radius: 0.8em;
+    margin-bottom: 1em;
+    background-color: var(--color-darkMagenta);
+}
