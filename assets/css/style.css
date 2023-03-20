@@ -28,21 +28,22 @@ p {
 
 .container {
     max-width: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .block-first .subblock h1 {
-    font-size: 3em;
+    font-size: 4em;
     font-weight: 900;
     letter-spacing: -0.04em;
     line-height: 0.8em;
-    text-align: center;
     margin-bottom: 0.6em;
     color: var(--color-darkMagenta);
 }
 
 .block-first .subblock p {
     line-height: 1.4em;
-    text-align: center;
     font-weight: 500;
     margin-bottom: 2.4em;
     color: var(--color-softPink);
@@ -73,4 +74,78 @@ p {
     border-radius: 0.8em;
     margin-bottom: 1em;
     background-color: var(--color-darkMagenta);
+}
+
+.subcard {
+    display: flex;
+    align-items: center;
+    column-gap: 2em;
+    margin-bottom: 25px;
+}
+
+.subcard .person img {
+    width: 3em;
+    border-radius: 50%;
+}   
+
+.subcard .named h1 {
+    color: var(--color-white);
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.subcard .named p {
+    color: var(--color-softPink);
+}
+
+.desc p {
+    color: var(--color-white);
+    line-height: 1.6em;
+    letter-spacing: 0.05em;
+}
+
+.block1 {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1400px;
+    }
+    .block1 {
+        flex-direction: row;
+        margin-bottom: 50px;
+    }
+    .block-first {
+        max-width: 400px;
+    }
+    .encard {
+        width: 500px;
+    }
+    .toto1 {
+        margin-left: 14em;
+    }
+    .toto2 {
+        margin-left: 20em;
+    }
+    .toto3 {
+        margin-left: 26em;
+        margin-bottom: 50px;
+    }
+    .block-third {
+        display: flex;
+        column-gap: 2em;
+    }
+    .toto4 {
+        height: 200px;
+    }
+    .toto5 {
+        margin-top: 2em;
+        height: 200px;
+    }
+    .toto6 {
+        margin-top: 4em;
+        height: 200px;
+    }
 }
